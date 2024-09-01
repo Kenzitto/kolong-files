@@ -1,0 +1,21 @@
+
+
+a:visited{
+	color:green;
+}
+
+.u_line{
+	text-decoration: underline!important;
+}
+
+hr{
+	background-color: black!important;
+}
+
+.ul-disc{
+	list-style-type: disc!important;
+}
+
+.modal-backdrop {
+		display: none !important;
+}

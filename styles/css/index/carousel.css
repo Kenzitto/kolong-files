@@ -1,0 +1,464 @@
+
+
+#carousel-container{
+	height: 550px;
+	border-bottom: 100px inset rgba(0,0,0,0.25);
+}
+
+#carousel-container h1{
+	color: black;
+}
+
+#carousel-container .image1, #carousel-container .image2, #carousel-container .image3{
+	border: 8px solid rgba(0,0,0,0.25);
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	border-radius: 50%;
+	top: 350px;
+	left: 6%;
+	cursor: pointer;
+	transition-property: border-radius;
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+	
+}
+
+#carousel-container .image1:hover, #carousel-container .image2:hover, #carousel-container .image3:hover{
+	box-shadow: 2px 2px 20px lightblue;
+	border-radius: 0%;
+
+}
+.image1 {
+    animation: myself1 50s linear infinite;
+}
+
+@keyframes myself1 {
+    0% {
+        visibility: visible;
+    }
+    20% {
+        visibility: visible;
+    }
+    21% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: hidden;
+    }
+    41% {
+        visibility: visible;
+    }
+    60% {
+        visibility: visible;
+    }
+    61% {
+        visibility: hidden;
+    }
+    80% {
+        visibility: hidden;
+    }
+    81% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.image2 {
+    animation: myself2 50s linear infinite;
+}
+
+@keyframes myself2 {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    21% {
+        visibility: visible;
+    }
+    40% {
+        visibility: visible;
+    }
+    41% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: hidden;
+    }
+    61% {
+        visibility: visible;
+    }
+    80% {
+        visibility: visible;
+    }
+    81% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.image3 {
+    animation: myself3 50s linear infinite;
+}
+
+@keyframes myself3 {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    21% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: hidden;
+    }
+    41% {
+        visibility: visible;
+    }
+    60% {
+        visibility: visible;
+    }
+    61% {
+        visibility: hidden;
+    }
+    80% {
+        visibility: hidden;
+    }
+    81% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.image4 {
+    animation: myself4 50s linear infinite;
+}
+
+@keyframes myself4 {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    21% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: hidden;
+    }
+    41% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: hidden;
+    }
+    61% {
+        visibility: visible;
+    }
+    80% {
+        visibility: visible;
+    }
+    81% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.image5 {
+    animation: myself5 50s linear infinite;
+}
+
+@keyframes myself5 {
+    0% {
+        visibility: hidden;
+    }
+    20% {
+        visibility: hidden;
+    }
+    21% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: hidden;
+    }
+    41% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: hidden;
+    }
+    61% {
+        visibility: hidden;
+    }
+    80% {
+        visibility: hidden;
+    }
+    81% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+
+
+#carousel-container marquee{
+	width: 100%;
+	position: relative;
+	top: 470px;
+	color: rgba(255,255,255,0.75);
+	font-weight: 700;
+	font-size: large;
+	padding-top: 10px;
+	z-index: -1;
+}
+
+
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6, .banner7, .banner8{
+	height: 560px;
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+	
+}
+
+.banner1 img, .banner2 img, .banner3 img, .banner4 img, .banner5 img, .banner6 img, .banner7 img, .banner8 img{
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner1{
+	animation: slide1 36s linear infinite;
+}
+
+@keyframes slide1{
+	 0%{
+			visibility: visible;
+	 }
+	 20%{
+		 visibility: hidden;
+	 }
+	 40%{
+			visibility: hidden;
+	 }
+	 60%{
+			visibility: hidden;
+	 }
+	 80%{
+			visibility: hidden;
+	 }
+	 100%{
+			visibility: hidden;
+	 }
+}
+
+.banner2{
+	animation: slide2 36s linear infinite 2s;
+}
+
+@keyframes slide2{
+	0%{
+			visibility: hidden;
+	 }
+	 20%{
+		 visibility: visible;
+	 }
+	 40%{
+			visibility: hidden;
+	 }
+	 60%{
+			visibility: hidden;
+	 }
+	 80%{
+			visibility: hidden;
+	 }
+	 100%{
+			visibility: hidden;
+	 }
+}
+
+.banner3{
+	animation: slide3 36s linear infinite 4s;
+}
+
+@keyframes slide3{
+	0%{
+			visibility: hidden;
+	 }
+	 20%{
+		 visibility: hidden;
+	 }
+	 40%{
+			visibility: visible;
+	 }
+	 60%{
+			visibility: hidden;
+	 }
+	 80%{
+			visibility: hidden;
+	 }
+	 100%{
+			visibility: hidden;
+	 }
+}
+
+
+.banner4{
+	animation: slide4 36s linear infinite 8s;
+}
+
+@keyframes slide4{
+	0%{
+			visibility: visible;
+	 }
+	 20%{
+		 visibility: hidden;
+	 }
+	 40%{
+			visibility: visible;
+	 }
+	 60%{
+			visibility: hidden;
+	 }
+	 80%{
+			visibility: visible;
+	 }
+	 100%{
+			visibility: hidden;
+	 }
+}
+
+.banner5{
+	animation: slide5 36s linear infinite 14s;
+}
+
+@keyframes slide5{
+	 0%{
+			visibility: hidden;
+	 }
+	 16%{
+			visibility: hidden;
+	 }
+	 33%{
+			visibility: hidden;
+	 }
+	 49%{
+			visibility: hidden;
+	 }
+	 65%{
+		 visibility: visible;
+	 }
+	 83%{
+			visibility: hidden;
+	 }
+		100%{
+			visibility: hidden;
+	 }
+}
+
+.banner6{
+	animation: slide6 36s linear infinite;
+}
+
+@keyframes slide6{
+	 0%{
+			visibility: hidden;
+	 }
+	 16%{
+			visibility: hidden;
+	 }
+	 33%{
+			visibility: hidden;
+	 }
+	 49%{
+			visibility: hidden;
+	 }
+	 65%{
+		 visibility: visible;
+	 }
+	 83%{
+			visibility: hidden;
+	 }
+		100%{
+			visibility: hidden;
+	 }
+}
+
+.banner7{
+	animation: slide7 36s linear infinite;
+}
+
+@keyframes slide7{
+	 0%{
+			visibility: hidden;
+	 }
+	 16%{
+			visibility: hidden;
+	 }
+	 33%{
+			visibility: hidden;
+	 }
+	 49%{
+			visibility: hidden;
+	 }
+	 65%{
+		 visibility: hidden;
+	 }
+	 83%{
+			visibility: visible;
+	 }
+		100%{
+			visibility: hidden;
+	 }
+}
+
+
+.banner8{
+	animation: slide8 36s linear infinite;
+}
+
+@keyframes slide8{
+	 0%{
+			visibility: hidden;
+	 }
+	 16%{
+			visibility: hidden;
+	 }
+	 33%{
+			visibility: hidden;
+	 }
+	 49%{
+			visibility: hidden;
+	 }
+	 65%{
+		 visibility: hidden;
+	 }
+	 83%{
+			visibility: hidden;
+	 }
+		100%{
+			visibility: visible;
+	 }
+}
+

@@ -1,0 +1,50 @@
+
+.for-more-info p {
+	border: 2px solid;
+}
+
+
+.footer-contacts p{
+	width: 300px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#greetings{
+	font-weight: 700;
+	font-style: italic;
+}
+
+#agenda{
+	width: 80%;
+	padding-left: 3%;
+}
+	
+#agenda li{
+	font-size:1.2rem;
+	margin: 2% 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.agenda_list{
+	font-weight: 400!important;
+}
+
+.agenda_list b{
+	font-weight: 500;
+	color: blue;
+}
+
+#agenda span{
+	font-weight: 600;
+	color: crimson;
+	width: 50%;
+	text-align: left;
+}
+
+.agenda-col{
+	color: blue!important;
+}

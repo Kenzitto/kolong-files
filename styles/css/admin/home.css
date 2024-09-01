@@ -1,0 +1,80 @@
+
+.admin-page-header{
+	padding: 1%;
+	text-align: center;
+}
+
+.admin-page-header h1{
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.admin-dashboard{
+	padding: 1%;
+	text-align: center;
+}
+
+.admin-dashboard p{
+	padding: 1%;
+	width: 25%;
+	background: ghostwhite;
+	color: crimson;
+	font-weight: 900;
+}
+
+.admin-dashboard p b{
+	font-size: 2rem;
+}
+
+.admin-list-display{
+
+}
+
+.admin-list-of-products, 
+.admin-list-of-services
+{
+	display: grid;
+	justify-content: center;
+	text-align:  center;
+}
+
+.col.admin-list-of-products ul, 
+.col.admin-list-of-services ul{
+	width: 400px;
+} 
+
+.col.admin-list-of-products li, 
+.col.admin-list-of-services li 
+{
+    margin: 4% 0;
+		padding: 2%;
+		background: #ddd;
+		display: flex;
+}
+
+.admin-list-of-products h1, 
+.admin-list-of-services h1
+{
+	font-weight: 900;
+	font-size: 2rem;
+	text-decoration: underline!important;
+}
+
+.admin-list-of-products label, 
+.admin-list-of-services label
+{
+	font-weight: 800;
+	font-size: 1.2rem;
+	color: blue;
+	width: 100%;
+}
+
+.add-new-product{
+	display:flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.add-new-product p{
+	margin: 0 1%;
+}
